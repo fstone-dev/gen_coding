@@ -1,0 +1,255 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #FDFDC2; /* Figma background color */
+    color: #0D141C; /* Default text color */
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px; /* Figma padding */
+}
+
+/* Header Section */
+.header {
+    background-color: #F6EED3; /* Figma header background color */
+    border-bottom: 1px solid #E5E8EB; /* Figma stroke */
+    padding: 12px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* Figma gap */
+}
+
+.logo-icon {
+    width: 16px; /* Figma dimension */
+    height: 16px; /* Figma dimension */
+}
+
+.logo-text {
+    font-weight: 700; /* Figma font weight */
+    font-size: 18px; /* Figma font size */
+    line-height: 1.27; /* Figma line height */
+    color: #0D141C;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 32px; /* Gap between nav list and profile thumbnail */
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 36px; /* Figma gap */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #0D141C;
+    font-weight: 500; /* Figma font weight */
+    font-size: 14px; /* Figma font size */
+    line-height: 1.5; /* Figma line height */
+}
+
+.profile-thumbnail {
+    width: 40px; /* Figma dimension */
+    height: 40px; /* Figma dimension */
+    border-radius: 20px; /* Figma border radius */
+    overflow: hidden;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 20px 0;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: row; /* Arrange content and interests side-by-side */
+    gap: 20px; /* Adjust as needed */
+    padding: 0 160px; /* Figma padding */
+}
+
+.hero-content {
+    flex: 1; /* Take up available space */
+    padding: 16px; /* Figma padding */
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+}
+
+.profile-background {
+    width: 128px; /* Figma dimension */
+    height: 128px; /* Figma dimension */
+    border-radius: 64px; /* Figma border radius */
+    overflow: hidden;
+}
+
+.profile-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 128px; /* Match profile-background height */
+}
+
+.profile-name {
+    font-weight: 700; /* Figma font weight */
+    font-size: 22px; /* Figma font size */
+    line-height: 1.27; /* Figma line height */
+    color: #0D141C;
+    margin: 0;
+}
+
+.profile-title {
+    font-weight: 400; /* Figma font weight */
+    font-size: 16px; /* Figma font size */
+    line-height: 1.5; /* Figma line height */
+    color: #4D7399;
+    margin: 0;
+}
+
+.interests-section {
+    flex: 1; /* Take up available space */
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Gap between title and cards */
+    padding: 20px 16px 12px; /* Figma padding */
+}
+
+.section-title {
+    font-weight: 700; /* Figma font weight */
+    font-size: 22px; /* Figma font size */
+    line-height: 1.27; /* Figma line height */
+    color: #0D141C;
+    margin: 0;
+    padding-bottom: 8px; /* Spacing below title */
+}
+
+.interest-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Gap between interest cards */
+}
+
+.interest-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px; /* Figma gap */
+    padding: 16px; /* Figma padding */
+    border-radius: 12px; /* Figma border radius */
+    background-color: #F7FAFC; /* Card background color */
+}
+
+.interest-text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px; /* Figma gap */
+    width: 608px; /* Figma dimension */
+}
+
+.interest-title {
+    font-weight: 700; /* Figma font weight */
+    font-size: 16px; /* Figma font size */
+    line-height: 1.25; /* Figma line height */
+    color: #0D141C;
+    margin: 0;
+}
+
+.interest-description {
+    font-weight: 400; /* Figma font weight */
+    font-size: 14px; /* Figma font size */
+    line-height: 1.5; /* Figma line height */
+    color: #4D7399;
+    margin: 0;
+}
+
+.interest-image-wrapper {
+    width: 171px; /* Figma dimension */
+    height: 171px; /* Figma dimension */
+    border-radius: 12px; /* Figma border radius */
+    overflow: hidden;
+}
+
+.interest-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 20px 0;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px; /* Gap between elements */
+    padding: 0 160px; /* Figma padding */
+}
+
+.contact-email {
+    font-weight: 400; /* Figma font weight */
+    font-size: 16px; /* Figma font size */
+    line-height: 1.5; /* Figma line height */
+    color: #0D141C;
+    margin: 0;
+    padding: 4px 16px 12px; /* Figma padding */
+}
+
+.social-links {
+    display: flex;
+    gap: 8px; /* Figma gap */
+    padding: 0 16px; /* Figma padding */
+}
+
+.social-link {
+    text-decoration: none;
+}
+
+.social-icon-wrapper {
+    width: 40px; /* Figma dimension */
+    height: 40px; /* Figma dimension */
+    border-radius: 20px; /* Figma border radius */
+    background-color: #E8EDF2; /* Figma background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    width: 20px; /* Figma dimension */
+    height: 20px; /* Figma dimension */
+}

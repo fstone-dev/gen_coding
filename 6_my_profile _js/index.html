@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinSoo's Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo-section">
+                <img src="images/logo.svg" alt="Logo" class="logo-icon">
+                <span class="logo-text">MinSoo</span>
+            </div>
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="profile-thumbnail">
+                    <img src="images/profile_image.png" alt="Profile" class="profile-img">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="profile-card">
+                    <div class="profile-background">
+                        <img src="images/profile_background.png" alt="Profile Background" class="profile-bg-img">
+                    </div>
+                    <div class="profile-info">
+                        <h1 class="profile-name" id="profile-name">MINSOO</h1>
+                        <p id="welcome-message"></p>
+                        <p class="profile-title">I'M A WEB DESIGNER</p>
+                    </div>
+                </div>
+            </div>
+            <div class="interests-section" id="interests-section">
+                <h2 class="section-title">My Interests</h2>
+                <div class="interest-cards">
+                    <div class="interest-card">
+                        <div class="interest-text-content">
+                            <h3 class="interest-title">Photography</h3>
+                            <p class="interest-description">세상의 모든 풍경을 이 작은 렌즈로 담는것을 좋아합니다.</p>
+                        </div>
+                        <div class="interest-image-wrapper">
+                            <img src="images/photography_card.png" alt="Photography" class="interest-image">
+                        </div>
+                    </div>
+                    <div class="interest-card">
+                        <div class="interest-text-content">
+                            <h3 class="interest-title">Travel</h3>
+                            <p class="interest-description">여행을 떠나요..</p>
+                        </div>
+                        <div class="interest-image-wrapper">
+                            <img src="images/travel_card.png" alt="Travel" class="interest-image">
+                        </div>
+                    </div>
+                    <div class="interest-card">
+                        <div class="interest-text-content">
+                            <h3 class="interest-title">Reading</h3>
+                            <p class="interest-description">1년 100독 목표!!</p>
+                        </div>
+                        <div class="interest-image-wrapper">
+                            <img src="images/reading_card.png" alt="Reading" class="interest-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container contact-container">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="contact-email">testerme@naver.com</p>
+            <div class="social-links">
+                <a href="#" class="social-link">
+                    <div class="social-icon-wrapper">
+                        <img src="images/github_icon.svg" alt="GitHub" class="social-icon">
+                    </div>
+                </a>
+                <a href="#" class="social-link">
+                    <div class="social-icon-wrapper">
+                        <img src="images/linkedin_icon.svg" alt="LinkedIn" class="social-icon">
+                    </div>
+                </a>
+            </div>
+            <div class="contact-buttons">
+                <button id="show-interests-btn">관심사 보기</button>
+                <button id="hide-interests-btn">관심사 숨기기</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
