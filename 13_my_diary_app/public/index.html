@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나만의 일기장</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="list-view">
+        <h1>나만의 일기장</h1>
+        <button id="new-diary-btn">새 일기 쓰기</button>
+        <ul id="diary-list"></ul>
+    </section>
+
+    <section id="form-view" style="display: none;">
+        <h2 id="form-title">새 일기 작성</h2>
+        <form id="diary-form">
+            <input type="hidden" id="diary-id">
+            <input type="text" id="diary-title" placeholder="제목" required>
+            <textarea id="diary-content" placeholder="오늘 하루는 어땠나요?" required></textarea>
+            <button type="submit">저장</button>
+            <button type="button" id="cancel-btn">취소</button>
+        </form>
+    </section>
+
+    <section id="detail-view" style="display: none;">
+        <h2 id="detail-title"></h2>
+        <p id="detail-date"></p>
+        <div id="detail-content"></div>
+        <button id="edit-btn">수정</button>
+        <button id="delete-btn">삭제</button>
+        <button id="back-to-list-btn">목록으로</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

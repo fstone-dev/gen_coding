@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #a0522d; /* Sienna - wood-like background */
+    color: #333;
+}
+
+h1 {
+    color: #5a2d0c;
+    margin-bottom: 20px;
+}
+
+#game-info {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #5a2d0c;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(15, 30px);
+    grid-template-rows: repeat(15, 30px);
+    background-color: #deb887; /* BurlyWood - board color */
+    border: 5px solid #8b4513; /* SaddleBrown - board border */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    position: relative; /* For absolute positioning of stones */
+}
+
+/* .cell will be added by JS, but defining basic styles */
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #8b4513; /* Grid lines */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Stone styles (will be added by JS) */
+.black-stone, .white-stone {
+    width: 26px; /* Slightly smaller than cell */
+    height: 26px; /* Slightly smaller than cell */
+    border-radius: 50%;
+    position: absolute; /* Position relative to game-board */
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.black-stone {
+    background-color: #000;
+}
+
+.white-stone {
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+#reset-button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #8b4513; /* SaddleBrown */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#reset-button:hover {
+    background-color: #a0522d; /* Sienna */
+}

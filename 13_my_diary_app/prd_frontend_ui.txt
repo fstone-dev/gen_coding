@@ -1,0 +1,33 @@
+<PRD Phase 2: 일기장 앱 프론트엔드 UI/UX>
+
+1. 목표: SPA 구조를 가진 일기장 앱의 모든 화면(뷰)에 대한 정적인 HTML 구조와 CSS 스타일을 완성한다.
+
+2. 파일 구조: public 폴더 안에 index.html과 style.css 파일을 생성한다.
+
+3. HTML 구조 요구사항 (index.html):
+- <body> 안에 각 뷰에 해당하는 <section>들을 만든다. 처음에는 목록 뷰만 보이고 나머지는 숨겨둔다 (display: none;).
+- (뷰 1) 목록 뷰: <section id="list-view">
+    - <h1>나만의 일기장</h1>
+    - <button id="new-diary-btn">새 일기 쓰기</button>
+    - <ul id="diary-list"></ul>
+- (뷰 2) 작성/수정 뷰: <section id="form-view" style="display: none;">
+    - <h2 id="form-title">새 일기 작성</h2>
+    - <form id="diary-form">
+    - <input type="hidden" id="diary-id"> (수정 시 사용할 숨겨진 필드)
+    - <input type="text" id="diary-title" placeholder="제목" required>
+    - <textarea id="diary-content" placeholder="오늘 하루는 어땠나요?" required></textarea>
+    - <button type="submit">저장</button>
+    - <button type="button" id="cancel-btn">취소</button>
+- (뷰 3) 상세 보기 뷰: <section id="detail-view" style="display: none;">
+    - <h2 id="detail-title"></h2>
+    - <p id="detail-date"></p>
+    - <div id="detail-content"></div>
+    - <button id="edit-btn">수정</button>
+    - <button id="delete-btn">삭제</button>
+    - <button id="back-to-list-btn">목록으로</button>
+
+4. CSS 스타일 요구사항 (style.css):
+- 각 뷰(section)에 대한 기본적인 레이아웃 스타일을 정의한다.
+- 목록(ul#diary-list)의 각 항목(li)이 클릭 가능한 것처럼 보이도록 :hover 효과를 추가한다.
+- 폼(form#diary-form)의 input과 textarea를 깔끔하게 디자인한다.
+- 상세 보기 뷰의 제목, 날짜, 내용 영역의 폰트와 여백을 적절히 조절한다.

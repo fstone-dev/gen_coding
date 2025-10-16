@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Light theme background */
+    font-family: 'Arial', sans-serif;
+    color: #333333; /* Dark text for contrast */
+}
+
+.calculator {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 320px; /* Adjust as needed */
+}
+
+.display {
+    background-color: #e0e0e0;
+    color: #333333;
+    font-size: 2.5em;
+    padding: 20px;
+    text-align: right;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.btn {
+    background-color: #d0d0d0;
+    color: #333333;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #c0c0c0;
+}
+
+.btn[data-type="operator"] {
+    background-color: #ffc107; /* Yellowish orange for operators */
+}
+
+.btn[data-type="operator"]:hover {
+    background-color: #ffcd38;
+}
+
+.btn[data-action="equals"] {
+    background-color: #28a745; /* Green for equals */
+    grid-row: span 2; /* Make equals button span two rows */
+    grid-column: span 1; /* Ensure it only spans one column */
+}
+
+.btn[data-action="equals"]:hover {
+    background-color: #218838;
+}
+
+.btn[data-value="0"] {
+    grid-column: span 2;
+}

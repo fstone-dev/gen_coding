@@ -1,0 +1,33 @@
+<PRD Phase 1: 일기장 앱 DB 및 백엔드 API>
+
+1. 목표: 일기장 데이터의 CRUD를 처리하는 완전한 백엔드 시스템을 구축한다.
+
+2. DB 설계 (diaries 테이블):
+- 데이터베이스: my_diary_db (기존 것 사용 또는 새로 생성)
+- 테이블 생성 SQL:
+  sql
+  CREATE TABLE diaries (
+      id INT AUTO_INCREMENT PRIMARY KEY,
+      title VARCHAR(255) NOT NULL,
+      content TEXT,
+      created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+      updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  );
+  
+  *(참고: ON UPDATE CURRENT_TIMESTAMP는 행이 수정될 때마다 updated_at 값이 자동으로 갱신되게 하는 유용한 기능이다.)*
+
+3. 백엔드 환경 설정:
+- npm init -y 및 npm install express mysql2 dotenv cors 실행
+- server.js, db.js, .env 파일 및 public 폴더 생성
+- db.js는 DB 커넥션 풀을 설정하고, .env는 DB 접속 정보를 담는다.
+- server.js는 express.static('public')으로 public 폴더를 서비스하고, 3001번 포트에서 실행된다.
+
+4. 백엔드 API 엔드포인트 명세 (server.js에 구현):
+- 모든 API는 /api/diaries 경로를 기반으로 한다.
+- 모든 응답은 JSON 형식이며, async/await와 try...catch를 사용한다.
+
+- GET /api/diaries: 모든 일기 목록을 최신순으로 조회.
+- GET /api/diaries/:id: 특정 id의 일기 하나를 상세 조회.
+- POST /api/diaries: 새 일기를 생성. 요청 본문으로 { title, content }를 받음. title과 content는 비어있을 수 없음 (유효성 검사).
+- PUT /api/diaries/:id: 특정 id의 일기를 수정. 요청 본문으로 { title, content }를 받음.
+- DELETE /api/diaries/:id: 특정 id의 일기를 삭제.

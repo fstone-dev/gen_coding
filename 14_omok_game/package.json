@@ -1,0 +1,15 @@
+{
+  "name": "14_omok_game",
+  "version": "1.0.0",
+  "description": "Basic Express static file server for Omok game",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

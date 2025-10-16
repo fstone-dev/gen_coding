@@ -1,0 +1,47 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+#list-view ul {
+    list-style: none;
+    padding: 0;
+}
+
+#list-view li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#list-view li:hover {
+    background-color: #f0f0f0;
+}
+
+#diary-form input,
+#diary-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#detail-view h2 {
+    margin-bottom: 5px;
+}
+
+#detail-view p {
+    color: #666;
+    margin-top: 0;
+}
+
+button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
