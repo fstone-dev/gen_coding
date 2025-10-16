@@ -1,13 +1,8 @@
 
-# 🍌 모두를 위한 바이브코딩 (Vibe Coding) 🍌
+# 🍌 교재 모두를 위한 바이브코딩 (Vibe Coding) 🍌
 
-**비전공자를 위한 15주 Full-Stack 웹 개발 마스터 과정 예제 프로젝트**
+**CS 과정을 처음 접하는, 전공/비전공자를 위한 15주 Full-Stack 웹 개발 마스터 과정 예제 프로젝트**
 
-<br>
-
-https://github.com/fstone-dev/gen_coding/issues/1#issue-3520006130
-
-<br>
 
 > 이 저장소는 바이브코딩의 15주 웹 개발 교육 과정에서 진행된 모든 주차별 예제 프로젝트를 담고 있습니다. 웹 개발의 'W'자도 모르던 입문자가 **AI(Gemini CLI)와 협업**하여 **단계적 PRD(제품 요구사항 명세서)**를 작성하고, 순수 JavaScript 기반의 Full-Stack 애플리케이션을 완성해나가는 전체 여정을 기록합니다.
 
